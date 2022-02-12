@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2021/03/13 17:55:43.000.029,=C:\Users\diego\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/03/13 20:33:53.000.196,=C:\Users\diego\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2021/07/08 21:37:00.000.439,=C:\Users\diego\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/08/31 19:56:53.000.422,=C:\Users\diego\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/08/31 19:57:31.000.445,C:\Users\diego\Desktop\Horus2021\4 SEMESTRE\LINGUAGEM DE PROGRAMAÇÃO II\banco de dados trabalho\UNIT_VENDAS.dfm=C:\Users\diego\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2021/08/31 19:57:31.000.445,C:\Users\diego\Desktop\Horus2021\4 SEMESTRE\LINGUAGEM DE PROGRAMAÇÃO II\banco de dados trabalho\UNIT_VENDAS.pas=C:\Users\diego\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/08/31 19:57:41.000.630,C:\Users\diego\Desktop\Horus2021\4 SEMESTRE\LINGUAGEM DE PROGRAMAÇÃO II\banco de dados trabalho\PROJETO_VENDAS.dproj=C:\Users\diego\OneDrive\Documentos\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2021/08/31 19:59:53.000.944,C:\Users\diego\Desktop\Horus2021\4 SEMESTRE\LINGUAGEM DE PROGRAMAÇÃO II\banco de dados trabalho\UNIT_PRINCIPAL_VENDAS.pas=C:\Users\diego\Desktop\Horus2021\4 SEMESTRE\LINGUAGEM DE PROGRAMAÇÃO II\banco de dados trabalho\UNIT_VENDAS.pas</Transaction>
+    <Transaction>2021/08/31 19:59:53.000.944,C:\Users\diego\Desktop\Horus2021\4 SEMESTRE\LINGUAGEM DE PROGRAMAÇÃO II\banco de dados trabalho\UNIT_PRINCIPAL_VENDAS.dfm=C:\Users\diego\Desktop\Horus2021\4 SEMESTRE\LINGUAGEM DE PROGRAMAÇÃO II\banco de dados trabalho\UNIT_VENDAS.dfm</Transaction>
+    <Transaction>2021/08/31 20:01:47.000.515,=C:\Users\diego\Desktop\Horus2021\4 SEMESTRE\LINGUAGEM DE PROGRAMAÇÃO II\banco de dados trabalho\Unit1.pas</Transaction>
+    <Transaction>2021/08/31 20:02:55.000.157,C:\Users\diego\Desktop\Horus2021\4 SEMESTRE\LINGUAGEM DE PROGRAMAÇÃO II\banco de dados trabalho\UNIT_CONEXAO.dfm=C:\Users\diego\Desktop\Horus2021\4 SEMESTRE\LINGUAGEM DE PROGRAMAÇÃO II\banco de dados trabalho\Unit1.dfm</Transaction>
+    <Transaction>2021/08/31 20:02:55.000.157,C:\Users\diego\Desktop\Horus2021\4 SEMESTRE\LINGUAGEM DE PROGRAMAÇÃO II\banco de dados trabalho\UNIT_CONEXAO.pas=C:\Users\diego\Desktop\Horus2021\4 SEMESTRE\LINGUAGEM DE PROGRAMAÇÃO II\banco de dados trabalho\Unit1.pas</Transaction>
+    <Transaction>2021/08/31 20:11:46.000.837,=C:\Users\diego\Desktop\Horus2021\4 SEMESTRE\LINGUAGEM DE PROGRAMAÇÃO II\banco de dados trabalho\Unit1.pas</Transaction>
+    <Transaction>2021/08/31 20:12:19.000.048,C:\Users\diego\Desktop\Horus2021\4 SEMESTRE\LINGUAGEM DE PROGRAMAÇÃO II\banco de dados trabalho\UN_MUNICIPIO.pas=C:\Users\diego\Desktop\Horus2021\4 SEMESTRE\LINGUAGEM DE PROGRAMAÇÃO II\banco de dados trabalho\Unit1.pas</Transaction>
+    <Transaction>2021/08/31 20:12:19.000.048,C:\Users\diego\Desktop\Horus2021\4 SEMESTRE\LINGUAGEM DE PROGRAMAÇÃO II\banco de dados trabalho\UN_MUNICIPIO.dfm=C:\Users\diego\Desktop\Horus2021\4 SEMESTRE\LINGUAGEM DE PROGRAMAÇÃO II\banco de dados trabalho\Unit1.dfm</Transaction>
+    <Transaction>2021/09/14 19:14:10.000.403,=C:\Users\diego\Desktop\Horus2021\4 SEMESTRE\LINGUAGEM DE PROGRAMAÇÃO II\banco de dados trabalho\Unit1.pas</Transaction>
+    <Transaction>2021/09/14 20:30:03.000.754,=C:\Users\diego\Desktop\Horus2021\4 SEMESTRE\LINGUAGEM DE PROGRAMAÇÃO II\banco de dados trabalho\Unit1.pas</Transaction>
+    <Transaction>2021/09/14 20:30:23.000.527,C:\Users\diego\Desktop\Horus2021\4 SEMESTRE\LINGUAGEM DE PROGRAMAÇÃO II\banco de dados trabalho\UNIT_CLIENTE.pas=C:\Users\diego\Desktop\Horus2021\4 SEMESTRE\LINGUAGEM DE PROGRAMAÇÃO II\banco de dados trabalho\Unit1.pas</Transaction>
+    <Transaction>2021/09/14 20:30:23.000.544,C:\Users\diego\Desktop\Horus2021\4 SEMESTRE\LINGUAGEM DE PROGRAMAÇÃO II\banco de dados trabalho\UNIT_CLIENTE.dfm=C:\Users\diego\Desktop\Horus2021\4 SEMESTRE\LINGUAGEM DE PROGRAMAÇÃO II\banco de dados trabalho\Unit1.dfm</Transaction>
+    <Transaction>2021/09/14 21:56:35.000.980,=C:\Users\diego\Desktop\Horus2021\4 SEMESTRE\LINGUAGEM DE PROGRAMAÇÃO II\banco de dados trabalho\Unit1.pas</Transaction>
+    <Transaction>2021/09/14 21:56:49.000.081,C:\Users\diego\Desktop\Horus2021\4 SEMESTRE\LINGUAGEM DE PROGRAMAÇÃO II\banco de dados trabalho\UNIT_PRODUTO.pas=C:\Users\diego\Desktop\Horus2021\4 SEMESTRE\LINGUAGEM DE PROGRAMAÇÃO II\banco de dados trabalho\Unit1.pas</Transaction>
+    <Transaction>2021/09/14 21:56:49.000.081,C:\Users\diego\Desktop\Horus2021\4 SEMESTRE\LINGUAGEM DE PROGRAMAÇÃO II\banco de dados trabalho\UNIT_PRODUTO.dfm=C:\Users\diego\Desktop\Horus2021\4 SEMESTRE\LINGUAGEM DE PROGRAMAÇÃO II\banco de dados trabalho\Unit1.dfm</Transaction>
+    <Transaction>2021/09/21 19:40:33.000.740,=C:\Users\diego\Desktop\Horus2021\4 SEMESTRE\LINGUAGEM DE PROGRAMAÇÃO II\banco de dados trabalho\Unit1.pas</Transaction>
+    <Transaction>2021/09/21 19:41:10.000.663,C:\Users\diego\Desktop\Horus2021\4 SEMESTRE\LINGUAGEM DE PROGRAMAÇÃO II\banco de dados trabalho\Unit1.pas=C:\Users\diego\Desktop\Horus2021\4 SEMESTRE\LINGUAGEM DE PROGRAMAÇÃO II\banco de dados trabalho\UNIT_VENDA.pas</Transaction>
+    <Transaction>2021/09/21 19:41:10.000.663,C:\Users\diego\Desktop\Horus2021\4 SEMESTRE\LINGUAGEM DE PROGRAMAÇÃO II\banco de dados trabalho\Unit1.dfm=C:\Users\diego\Desktop\Horus2021\4 SEMESTRE\LINGUAGEM DE PROGRAMAÇÃO II\banco de dados trabalho\UNIT_VENDA.dfm</Transaction>
+    <Transaction>2021/10/05 19:33:01.000.457,=C:\Users\diego\Desktop\Horus2021\4 SEMESTRE\LINGUAGEM DE PROGRAMAÇÃO II\banco de dados trabalho\Unit1.pas</Transaction>
+    <Transaction>2021/10/05 19:41:07.000.930,C:\Users\diego\Desktop\Horus2021\4 SEMESTRE\LINGUAGEM DE PROGRAMAÇÃO II\banco de dados trabalho\UNIT_CLIENTERELAT.dfm=C:\Users\diego\Desktop\Horus2021\4 SEMESTRE\LINGUAGEM DE PROGRAMAÇÃO II\banco de dados trabalho\Unit1.dfm</Transaction>
+    <Transaction>2021/10/05 19:41:07.000.930,C:\Users\diego\Desktop\Horus2021\4 SEMESTRE\LINGUAGEM DE PROGRAMAÇÃO II\banco de dados trabalho\UNIT_CLIENTERELAT.pas=C:\Users\diego\Desktop\Horus2021\4 SEMESTRE\LINGUAGEM DE PROGRAMAÇÃO II\banco de dados trabalho\Unit1.pas</Transaction>
+    <Transaction>2021/10/06 19:57:01.000.171,=C:\Users\diego\Desktop\Horus2021\4 SEMESTRE\LINGUAGEM DE PROGRAMAÇÃO II\banco de dados trabalho\Unit1.pas</Transaction>
+    <Transaction>2021/10/06 19:58:00.000.687,C:\Users\diego\Desktop\Horus2021\4 SEMESTRE\LINGUAGEM DE PROGRAMAÇÃO II\banco de dados trabalho\Unit1.pas=C:\Users\diego\Desktop\Horus2021\4 SEMESTRE\LINGUAGEM DE PROGRAMAÇÃO II\banco de dados trabalho\UNIT_PRODRELAT.pas</Transaction>
+    <Transaction>2021/10/06 19:58:00.000.687,C:\Users\diego\Desktop\Horus2021\4 SEMESTRE\LINGUAGEM DE PROGRAMAÇÃO II\banco de dados trabalho\Unit1.dfm=C:\Users\diego\Desktop\Horus2021\4 SEMESTRE\LINGUAGEM DE PROGRAMAÇÃO II\banco de dados trabalho\UNIT_PRODRELAT.dfm</Transaction>
+    <Transaction>2021/10/06 20:44:22.000.123,=C:\Users\diego\Desktop\Horus2021\4 SEMESTRE\LINGUAGEM DE PROGRAMAÇÃO II\banco de dados trabalho\Unit1.pas</Transaction>
+    <Transaction>2021/10/06 20:44:52.000.078,C:\Users\diego\Desktop\Horus2021\4 SEMESTRE\LINGUAGEM DE PROGRAMAÇÃO II\banco de dados trabalho\Unit1.pas=C:\Users\diego\Desktop\Horus2021\4 SEMESTRE\LINGUAGEM DE PROGRAMAÇÃO II\banco de dados trabalho\UNIT_RELATVENDA.pas</Transaction>
+    <Transaction>2021/10/06 20:44:52.000.078,C:\Users\diego\Desktop\Horus2021\4 SEMESTRE\LINGUAGEM DE PROGRAMAÇÃO II\banco de dados trabalho\Unit1.dfm=C:\Users\diego\Desktop\Horus2021\4 SEMESTRE\LINGUAGEM DE PROGRAMAÇÃO II\banco de dados trabalho\UNIT_RELATVENDA.dfm</Transaction>
+  </Transactions>
+</BorlandProject>

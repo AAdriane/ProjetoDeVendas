@@ -1,0 +1,98 @@
+object FORM_MUNICIPIO: TFORM_MUNICIPIO
+  Left = 0
+  Top = 0
+  Caption = 'CADASTRO DE MUNICIPIOS'
+  ClientHeight = 365
+  ClientWidth = 722
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object DbgMunicipio: TDBGrid
+    Left = 0
+    Top = 144
+    Width = 465
+    Height = 228
+    DataSource = SMunicipio
+    TabOrder = 0
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'Tahoma'
+    TitleFont.Style = []
+    Columns = <
+      item
+        Expanded = False
+        FieldName = 'ID_MUNICIPIO'
+        Title.Alignment = taCenter
+        Title.Caption = 'CODIGO'
+        Title.Color = clAqua
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'NOME'
+        Width = 616
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'UF'
+        Visible = True
+      end>
+  end
+  object DBEdit1: TDBEdit
+    Left = 192
+    Top = 37
+    Width = 233
+    Height = 21
+    DataField = 'ID_MUNICIPIO'
+    DataSource = SMunicipio
+    TabOrder = 1
+  end
+  object DBEdit2: TDBEdit
+    Left = 192
+    Top = 64
+    Width = 233
+    Height = 21
+    DataField = 'NOME'
+    DataSource = SMunicipio
+    TabOrder = 2
+  end
+  object DBEdit3: TDBEdit
+    Left = 192
+    Top = 91
+    Width = 233
+    Height = 21
+    DataField = 'UF'
+    DataSource = SMunicipio
+    TabOrder = 3
+  end
+  object DBNavigator1: TDBNavigator
+    Left = 225
+    Top = 118
+    Width = 240
+    Height = 25
+    DataSource = SMunicipio
+    TabOrder = 4
+  end
+  object ZqMunicipio: TZQuery
+    Connection = DmConexao.ZcConexao
+    Active = True
+    SQL.Strings = (
+      'SELECT * FROM MUNICIPIO')
+    Params = <>
+    Left = 32
+    Top = 32
+  end
+  object SMunicipio: TDataSource
+    DataSet = ZqMunicipio
+    Left = 80
+    Top = 24
+  end
+end

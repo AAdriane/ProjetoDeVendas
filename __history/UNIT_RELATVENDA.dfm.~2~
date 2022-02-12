@@ -1,0 +1,219 @@
+object FormRelatVenda: TFormRelatVenda
+  Left = 0
+  Top = 0
+  Caption = 'RELAT'#211'RIO DE VENDAS'
+  ClientHeight = 397
+  ClientWidth = 774
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object RLReport1: TRLReport
+    Left = 0
+    Top = -24
+    Width = 794
+    Height = 1123
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clBlack
+    Font.Height = -13
+    Font.Name = 'Arial'
+    Font.Style = []
+    object RLBand1: TRLBand
+      Left = 38
+      Top = 38
+      Width = 718
+      Height = 67
+      BandType = btColumnHeader
+      object RLLabel1: TRLLabel
+        Left = 232
+        Top = 24
+        Width = 210
+        Height = 28
+        Caption = 'Extrato de Vendas:'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlack
+        Font.Height = -24
+        Font.Name = 'Arial'
+        Font.Style = [fsItalic]
+        ParentFont = False
+      end
+    end
+    object RLBand2: TRLBand
+      Left = 38
+      Top = 105
+      Width = 718
+      Height = 67
+      BandType = btColumnHeader
+      object RLLabel4: TRLLabel
+        Left = 24
+        Top = 24
+        Width = 48
+        Height = 16
+        Caption = 'Codigo:'
+      end
+      object RLLabel2: TRLLabel
+        Left = 160
+        Top = 24
+        Width = 48
+        Height = 16
+        Caption = 'Cliente:'
+      end
+      object RLLabel3: TRLLabel
+        Left = 312
+        Top = 21
+        Width = 53
+        Height = 16
+        Caption = 'Produto:'
+      end
+      object RLLabel5: TRLLabel
+        Left = 428
+        Top = 21
+        Width = 74
+        Height = 16
+        Caption = 'Quantidade:'
+      end
+      object RLLabel6: TRLLabel
+        Left = 568
+        Top = 21
+        Width = 70
+        Height = 16
+        Caption = 'Valor Total:'
+      end
+    end
+    object RLBand3: TRLBand
+      Left = 38
+      Top = 172
+      Width = 718
+      Height = 51
+      object RLDBText1: TRLDBText
+        Left = 24
+        Top = 24
+        Width = 68
+        Height = 16
+        DataField = 'ID_VENDA'
+        DataSource = dsRelatVenda
+        Text = ''
+      end
+      object RLDBText2: TRLDBText
+        Left = 432
+        Top = 24
+        Width = 87
+        Height = 16
+        DataField = 'QUANTIDADE'
+        DataSource = dsRelatVenda
+        Text = ''
+      end
+      object RLDBText3: TRLDBText
+        Left = 568
+        Top = 22
+        Width = 88
+        Height = 16
+        DataField = 'VALORTOTAL'
+        DataSource = dsRelatVenda
+        Text = ''
+      end
+      object RLDBText4: TRLDBText
+        Left = 160
+        Top = 23
+        Width = 78
+        Height = 16
+        DataField = 'NomeCliente'
+        DataSource = dsRelatVenda
+        Text = ''
+      end
+      object RLDBText5: TRLDBText
+        Left = 312
+        Top = 28
+        Width = 49
+        Height = 16
+        DataField = 'Produto'
+        DataSource = dsRelatVenda
+        Text = ''
+      end
+    end
+  end
+  object zqRelatVenda: TZQuery
+    Connection = DmConexao.ZcConexao
+    Active = True
+    SQL.Strings = (
+      'select venda.id_venda, '
+      '           venda.id_cliente,'
+      '           venda.valortotal,'
+      '           vendaitem.id_produto,'
+      '           vendaitem.quantidade'
+      'from venda'
+      'join vendaitem on (vendaitem.id_venda = venda.id_venda);'
+      ''
+      ''
+      '')
+    Params = <>
+    Left = 560
+    Top = 320
+    object zqRelatVendaID_VENDA: TIntegerField
+      FieldName = 'ID_VENDA'
+      Required = True
+    end
+    object zqRelatVendaID_CLIENTE: TIntegerField
+      FieldName = 'ID_CLIENTE'
+    end
+    object zqRelatVendaVALORTOTAL: TSingleField
+      FieldName = 'VALORTOTAL'
+    end
+    object zqRelatVendaID_PRODUTO: TIntegerField
+      FieldName = 'ID_PRODUTO'
+      Required = True
+    end
+    object zqRelatVendaQUANTIDADE: TIntegerField
+      FieldName = 'QUANTIDADE'
+      Required = True
+    end
+    object zqRelatVendaProduto: TStringField
+      FieldKind = fkLookup
+      FieldName = 'Produto'
+      LookupDataSet = zqproduto
+      LookupKeyFields = 'CODPRODUTO'
+      LookupResultField = 'DESCRICAO'
+      KeyFields = 'ID_PRODUTO'
+      Size = 200
+      Lookup = True
+    end
+    object zqRelatVendaNomeCliente: TStringField
+      FieldKind = fkLookup
+      FieldName = 'NomeCliente'
+      LookupDataSet = zqcliente
+      LookupKeyFields = 'CODCLIENTE'
+      LookupResultField = 'NOME'
+      KeyFields = 'ID_CLIENTE'
+      Size = 200
+      Lookup = True
+    end
+  end
+  object dsRelatVenda: TDataSource
+    DataSet = zqRelatVenda
+    Left = 424
+    Top = 296
+  end
+  object zqproduto: TZQuery
+    Connection = DmConexao.ZcConexao
+    Active = True
+    SQL.Strings = (
+      'select * from produto')
+    Params = <>
+    Left = 568
+    Top = 248
+  end
+  object zqcliente: TZQuery
+    Connection = DmConexao.ZcConexao
+    Active = True
+    SQL.Strings = (
+      'select * from cliente')
+    Params = <>
+    Left = 672
+    Top = 296
+  end
+end

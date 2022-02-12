@@ -1,0 +1,38 @@
+unit UNIT_CLIENTERELAT;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, RLReport, UNIT_CONEXAO,
+  Data.DB, ZAbstractRODataset, ZAbstractDataset, ZDataset;
+
+type
+  TFormRelatCliente = class(TForm)
+    RLReport1: TRLReport;
+    RLBand1: TRLBand;
+    RLBand2: TRLBand;
+    Label1: TLabel;
+    Label2: TLabel;
+    Label3: TLabel;
+    TLabel4: TLabel;
+    Label4: TLabel;
+    RLBand3: TRLBand;
+    ZQuery1: TZQuery;
+
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FormRelatCliente: TFormRelatCliente;
+
+implementation
+
+{$R *.dfm}
+
+
+
+end.

@@ -1,0 +1,201 @@
+object FormProduto: TFormProduto
+  Left = 0
+  Top = 0
+  Caption = 'Cadastro de Produtos'
+  ClientHeight = 326
+  ClientWidth = 691
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Panel2: TPanel
+    Left = 0
+    Top = 0
+    Width = 385
+    Height = 178
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = 'Courier New'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 0
+    object Label1: TLabel
+      Left = 89
+      Top = 44
+      Width = 49
+      Height = 16
+      Caption = 'Codigo:'
+    end
+    object Label4: TLabel
+      Left = 68
+      Top = 73
+      Width = 70
+      Height = 16
+      Caption = 'Descri'#231#227'o:'
+    end
+    object Label5: TLabel
+      Left = 96
+      Top = 95
+      Width = 42
+      Height = 16
+      Caption = 'Valor:'
+    end
+    object edtCodigo: TDBEdit
+      Left = 144
+      Top = 33
+      Width = 129
+      Height = 24
+      DataField = 'CODPRODUTO'
+      DataSource = SProduto
+      TabOrder = 0
+    end
+    object edtDescricao: TDBEdit
+      Left = 144
+      Top = 65
+      Width = 129
+      Height = 24
+      DataField = 'DESCRICAO'
+      DataSource = SProduto
+      TabOrder = 1
+    end
+    object BtnNovo: TButton
+      Left = 78
+      Top = 5
+      Width = 60
+      Height = 25
+      Caption = 'Novo'
+      TabOrder = 2
+      OnClick = BtnNovoClick
+    end
+    object BtnEditar: TButton
+      Left = 295
+      Top = 95
+      Width = 75
+      Height = 19
+      Caption = 'Editar'
+      TabOrder = 3
+      OnClick = BtnEditarClick
+    end
+    object BtnExcluir: TButton
+      Left = 295
+      Top = 120
+      Width = 75
+      Height = 25
+      Caption = 'Excluir'
+      TabOrder = 4
+      OnClick = BtnExcluirClick
+    end
+    object btnSalvar: TButton
+      Left = 295
+      Top = 33
+      Width = 75
+      Height = 25
+      Caption = 'Salvar'
+      TabOrder = 5
+      OnClick = btnSalvarClick
+    end
+    object BtnCancelar: TButton
+      Left = 295
+      Top = 64
+      Width = 75
+      Height = 25
+      Caption = 'Cancelar'
+      TabOrder = 6
+      OnClick = BtnCancelarClick
+    end
+    object edtValor: TDBEdit
+      Left = 144
+      Top = 92
+      Width = 129
+      Height = 24
+      AutoSelect = False
+      DataField = 'VALOR'
+      DataSource = SProduto
+      TabOrder = 7
+    end
+  end
+  object Panel1: TPanel
+    Left = 391
+    Top = 0
+    Width = 306
+    Height = 178
+    TabOrder = 1
+    object lbPesquisar: TLabel
+      Left = 32
+      Top = 49
+      Width = 91
+      Height = 13
+      Caption = 'Pesquisar Produto:'
+    end
+    object edtPesquisar: TEdit
+      Left = 32
+      Top = 70
+      Width = 121
+      Height = 21
+      TabOrder = 0
+    end
+    object btnPesquisar: TButton
+      Left = 159
+      Top = 69
+      Width = 75
+      Height = 25
+      Caption = 'Buscar'
+      DoubleBuffered = True
+      ParentDoubleBuffered = False
+      TabOrder = 1
+      OnClick = btnPesquisarClick
+    end
+  end
+  object DBGrid1: TDBGrid
+    Left = 0
+    Top = 184
+    Width = 697
+    Height = 145
+    DataSource = SProduto
+    TabOrder = 2
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'Tahoma'
+    TitleFont.Style = []
+    Columns = <
+      item
+        Expanded = False
+        FieldName = 'CODPRODUTO'
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'DESCRICAO'
+        Width = 250
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'VALOR'
+        Width = 80
+        Visible = True
+      end>
+  end
+  object zqProduto: TZQuery
+    Connection = DmConexao.ZcConexao
+    SQL.Strings = (
+      'select * from PRODUTO')
+    Params = <>
+    Left = 8
+    Top = 16
+  end
+  object SProduto: TDataSource
+    DataSet = zqProduto
+    OnStateChange = SProdutoStateChange
+    Left = 8
+    Top = 64
+  end
+end

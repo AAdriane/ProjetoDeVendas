@@ -1,0 +1,23 @@
+program PROJETO_VENDAS;
+
+uses
+  Vcl.Forms,
+  UNIT_PRINCIPAL_VENDAS in 'UNIT_PRINCIPAL_VENDAS.pas' {TformPrincipal},
+  UNIT_CONEXAO in 'UNIT_CONEXAO.pas' {DmConexao: TDataModule},
+  UN_MUNICIPIO in 'UN_MUNICIPIO.pas' {FORM_MUNICIPIO},
+  Vcl.Themes,
+  Vcl.Styles,
+  UNIT_CLIENTE in 'UNIT_CLIENTE.pas' {FormCliente},
+  UNIT_PRODUTO in 'UNIT_PRODUTO.pas' {FormProduto},
+  UNIT_VENDA in 'UNIT_VENDA.pas' {Form1};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  TStyleManager.TrySetStyle('Amakrits');
+  Application.CreateForm(TDmConexao, DmConexao);
+  Application.CreateForm(TTformPrincipal, TformPrincipal);
+  Application.Run;
+end.

@@ -1,0 +1,41 @@
+unit UNIT_CONEXAO;
+
+interface
+
+uses
+  System.SysUtils, System.Classes, ZAbstractConnection, ZConnection, Data.DB,
+  ZAbstractRODataset, ZAbstractDataset, ZDataset;
+
+type
+  TDmConexao = class(TDataModule)
+    ZcConexao: TZConnection;
+    zqGenerator: TZQuery;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+    function buscarID(nome: string) : integer;
+  end;
+
+var
+  DmConexao: TDmConexao;
+
+implementation
+
+{%CLASSGROUP 'Vcl.Controls.TControl'}
+
+{$R *.dfm}
+
+{ TDmConexao }
+
+function TDmConexao.buscarID(nome: string): integer;
+begin
+  zqGenerator.Close;
+  zqGenerator.SQL := ' SELECT gen_id ('+
+    NomeGenerator + ', 1)' +
+    'FROM RDB$DATABASE';
+
+  zqGenerator.open;
+end;
+
+end.

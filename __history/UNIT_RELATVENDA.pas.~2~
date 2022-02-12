@@ -1,0 +1,53 @@
+unit UNIT_RELATVENDA;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, UNIT_CONEXAO, Data.DB, RLReport,
+  ZAbstractRODataset, ZAbstractDataset, ZDataset;
+
+type
+  TFormRelatVenda = class(TForm)
+    RLReport1: TRLReport;
+    RLBand1: TRLBand;
+    RLBand2: TRLBand;
+    RLBand3: TRLBand;
+    RLLabel1: TRLLabel;
+    RLLabel4: TRLLabel;
+    RLLabel2: TRLLabel;
+    RLLabel3: TRLLabel;
+    RLLabel5: TRLLabel;
+    zqRelatVenda: TZQuery;
+    dsRelatVenda: TDataSource;
+    RLDBText1: TRLDBText;
+    RLDBText2: TRLDBText;
+    RLDBText3: TRLDBText;
+    RLDBText4: TRLDBText;
+    RLDBText5: TRLDBText;
+    zqRelatVendaID_VENDA: TIntegerField;
+    zqRelatVendaID_CLIENTE: TIntegerField;
+    zqRelatVendaVALORTOTAL: TSingleField;
+    zqRelatVendaID_PRODUTO: TIntegerField;
+    zqRelatVendaQUANTIDADE: TIntegerField;
+    RLLabel6: TRLLabel;
+    zqproduto: TZQuery;
+    zqRelatVendaProduto: TStringField;
+    zqcliente: TZQuery;
+    zqRelatVendaNomeCliente: TStringField;
+
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FormRelatVenda: TFormRelatVenda;
+
+implementation
+
+{$R *.dfm}
+
+
+end.
